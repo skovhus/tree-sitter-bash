@@ -466,7 +466,7 @@ module.exports = grammar({
     expansion: $ => seq(
       '${',
       optional(choice('#', '!')),
-      choice(
+      optional(choice(
         seq(
           $.variable_name,
           '=',
@@ -487,7 +487,7 @@ module.exports = grammar({
             ':', ':?', '=', ':-', '%', '-', '#'
           ))
         ),
-      ),
+      )),
       '}'
     ),
 
