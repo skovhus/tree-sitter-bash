@@ -301,7 +301,7 @@
         "required": false,
         "types": [
           {
-            "type": "_expression",
+            "type": "variable_assignment",
             "named": true
           }
         ]
